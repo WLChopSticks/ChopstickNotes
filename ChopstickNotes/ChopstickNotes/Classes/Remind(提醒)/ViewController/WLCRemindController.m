@@ -1,24 +1,24 @@
 //
-//  WLCHomeController.m
+//  WLCRemindController.m
 //  ChopstickNotes
 //
 //  Created by 王 on 16/2/17.
 //  Copyright © 2016年 WLChopSticks. All rights reserved.
 //
 
-#import "WLCHomeController.h"
+#import "WLCRemindController.h"
 
-@interface WLCHomeController ()
+@interface WLCRemindController ()
 
 @end
 
-@implementation WLCHomeController
+@implementation WLCRemindController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning {

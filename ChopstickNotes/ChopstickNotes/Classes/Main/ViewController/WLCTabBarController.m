@@ -7,6 +7,9 @@
 //
 
 #import "WLCTabBarController.h"
+#import "WLCNavigationController.h"
+#import "WLCHomeController.h"
+#import "WLCRemindController.h"
 
 @interface WLCTabBarController ()
 
@@ -20,13 +23,27 @@
     
     
     //添加子控制器
-    
+    [self addChildViewControllers];
     
 }
 
-//添加自控制器
+//添加子控制器
 - (void)addChildViewControllers {
     
+    
+    WLCHomeController *homeVC = [[WLCHomeController alloc]init];
+    [self addEveryChildViewController:homeVC withTitle:@"我的笔记"];
+    
+    WLCRemindController *remindVC = [[WLCRemindController alloc]init];
+    [self addEveryChildViewController:remindVC withTitle:@"我的提醒"];
+    
+    
+}
+- (void)addEveryChildViewController: (UIViewController *)vc withTitle: (NSString *)title {
+
+    WLCNavigationController *nav = [[WLCNavigationController alloc]initWithRootViewController:vc];
+    vc.title = title;
+    [self addChildViewController:nav];
 }
 
 - (void)didReceiveMemoryWarning {

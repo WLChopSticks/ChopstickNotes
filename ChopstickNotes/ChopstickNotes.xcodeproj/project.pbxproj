@@ -16,6 +16,7 @@
 		21E5B5E01C74442C00F7F0FD /* WLCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5DF1C74442C00F7F0FD /* WLCTabBarController.m */; };
 		21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E21C74444400F7F0FD /* WLCNavigationController.m */; };
 		21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E51C74448700F7F0FD /* WLCHomeController.m */; };
+		21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		21E5B5E41C74448700F7F0FD /* WLCHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCHomeController.h; sourceTree = "<group>"; };
 		21E5B5E51C74448700F7F0FD /* WLCHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCHomeController.m; sourceTree = "<group>"; };
 		21E5B5E71C7444CE00F7F0FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		21E5B5F11C744A4900F7F0FD /* WLCRemindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCRemindController.h; sourceTree = "<group>"; };
+		21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCRemindController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				21E5B5CF1C74425100F7F0FD /* Home(首页) */,
+				21E5B5EC1C744A3200F7F0FD /* Remind(提醒) */,
 				21E5B5D41C74425100F7F0FD /* LeftItems(侧边栏) */,
 				21E5B5D91C74425100F7F0FD /* Main */,
 			);
@@ -273,6 +277,47 @@
 				21E5B5DF1C74442C00F7F0FD /* WLCTabBarController.m */,
 				21E5B5E11C74444400F7F0FD /* WLCNavigationController.h */,
 				21E5B5E21C74444400F7F0FD /* WLCNavigationController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		21E5B5EC1C744A3200F7F0FD /* Remind(提醒) */ = {
+			isa = PBXGroup;
+			children = (
+				21E5B5ED1C744A3200F7F0FD /* Model */,
+				21E5B5EE1C744A3200F7F0FD /* Other */,
+				21E5B5EF1C744A3200F7F0FD /* View */,
+				21E5B5F01C744A3200F7F0FD /* ViewController */,
+			);
+			path = "Remind(提醒)";
+			sourceTree = "<group>";
+		};
+		21E5B5ED1C744A3200F7F0FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21E5B5EE1C744A3200F7F0FD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		21E5B5EF1C744A3200F7F0FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21E5B5F01C744A3200F7F0FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21E5B5F11C744A4900F7F0FD /* WLCRemindController.h */,
+				21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -410,6 +455,7 @@
 				21E5B5A01C7440E400F7F0FD /* AppDelegate.m in Sources */,
 				21E5B59D1C7440E400F7F0FD /* main.m in Sources */,
 				21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */,
+				21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */,
 				21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */,
 				21E5B5E01C74442C00F7F0FD /* WLCTabBarController.m in Sources */,
 			);
