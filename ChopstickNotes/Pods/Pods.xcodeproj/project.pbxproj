@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0730378CB16BEDCBA422BE5D3A3E245E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		196CBDA88DC996FEAD176CC07A00E2AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		1AB138DEA7D430445C41ABFDD550CDA8 /* Pods-ChopstickNotesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD28BA00B197B91031B8A0CB2AC7CA47 /* Pods-ChopstickNotesUITests-dummy.m */; };
+		2D3472FC5488FFC0E501DD490BE40FFE /* Pods-ChopstickNotesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7710A976F9CBCB179163A23C3ED5695 /* Pods-ChopstickNotesTests-dummy.m */; };
+		437020F969E91054AC9349D7D6C5D6AC /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C89622E224947A15030C562F990416B /* RECommonFunctions.m */; };
+		68EAE9433B3947E7EFC45386257AD523 /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = A4DC9B3732C2ADAE686612F8AAD8CD35 /* UIViewController+RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DC044E20C71DB06F9A9FB4B09A759CF /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CA8B732F5BDFC0EAE884FCB2248340 /* RESideMenu.m */; };
+		85FCC4C733210548D1CF9220391497F1 /* Pods-ChopstickNotes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB1719BF587F03FEFAA5B067842B46 /* Pods-ChopstickNotes-dummy.m */; };
+		906777CE59F8FD2A36D49035436FEF1F /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 81578034A7B1E40B9EBA575F3999E8C6 /* RESideMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A30E0437B4A61E6E244BE4C82C17F2B2 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = ED7E9F16B2AA98734172037E463643C9 /* RECommonFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A44EDD6257246E91ED920B225CF0E9E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		A4941562B895773B4F6BA8DE06D2AD14 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD59457AF9B8E39F3893328C540408 /* UIViewController+RESideMenu.m */; };
+		CF30AB91AC1512C069D2BDC1DB11DC7B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */; };
+		D2BE4B00D4AA077C4F4EA28F906B5793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		D31CBF23FC9D1A3CD632EA0597F5725E /* RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6D08148AE98B6553EF9721FB4F3AC /* RESideMenu-dummy.m */; };
+		E8BE25EF51BAFBC40C222365668B3321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */; };
+		F7AF7955614F9DC12DD2EC6AEF674A02 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25562730F92C5E8A484363EF42FEE709 /* Pods-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01A32A13BCB1878A113A2FA6B224E84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F5D48D66789AB794E52921E14680CA;
+			remoteInfo = RESideMenu;
+		};
+		11DB7DA92C9349F8F02F0170C5DA3893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F5D48D66789AB794E52921E14680CA;
+			remoteInfo = RESideMenu;
+		};
+		C1CC63747ACD5281C7EF5344200A5D8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F5D48D66789AB794E52921E14680CA;
+			remoteInfo = RESideMenu;
+		};
+		CE83A74B15EF56EFA0DF0971537E6A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90F5D48D66789AB794E52921E14680CA;
+			remoteInfo = RESideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0298AA71F44D31A656ECF2AD34CE4276 /* Pods-ChopstickNotes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChopstickNotes-resources.sh"; sourceTree = "<group>"; };
+		0852D234296A593D7D50DADADE94F91B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		09B66B6DFD0A1876CDD5A0F5048AD8C9 /* Pods-ChopstickNotesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChopstickNotesUITests-frameworks.sh"; sourceTree = "<group>"; };
+		09CB1719BF587F03FEFAA5B067842B46 /* Pods-ChopstickNotes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChopstickNotes-dummy.m"; sourceTree = "<group>"; };
+		13088B133A299CB09CAE48A6D6CD71DE /* Pods-ChopstickNotesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChopstickNotesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		139FCED58515653FBE6267E21D47A786 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		1555BAC701344CD1CE535EA2B8A2037B /* Pods-ChopstickNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChopstickNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2141D526941061C902E528499251F1F4 /* Pods-ChopstickNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChopstickNotesTests.release.xcconfig"; sourceTree = "<group>"; };
+		25562730F92C5E8A484363EF42FEE709 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		27DB1777C22A6DD723ACD2DE52CB4152 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		2EE6D08148AE98B6553EF9721FB4F3AC /* RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RESideMenu-dummy.m"; sourceTree = "<group>"; };
+		3798AA58DD6392EB5427A2125670312C /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		3C4BD63D91AFC866A3C858ED37FC202B /* Pods-ChopstickNotesUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChopstickNotesUITests-resources.sh"; sourceTree = "<group>"; };
+		3EB7797355B7A450F14813630163B71E /* libPods-ChopstickNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChopstickNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4486546B58EA430B10471BEF2EE3CA1A /* Pods-ChopstickNotesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChopstickNotesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C89622E224947A15030C562F990416B /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
+		4D130AA0516F720CDE583FD909459E85 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		5ADBE52E55729384D91F6ABA37384473 /* Pods-ChopstickNotes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChopstickNotes-frameworks.sh"; sourceTree = "<group>"; };
+		619769AFB7B45AD3D0B35B57D66DD99B /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		67D34E71F4086004F9DAE7FC865D2AA9 /* libPods-ChopstickNotesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChopstickNotesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6FDB15172540B3DE8DE1CD8302F8A7 /* RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RESideMenu.xcconfig; sourceTree = "<group>"; };
+		80CA8B732F5BDFC0EAE884FCB2248340 /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
+		81578034A7B1E40B9EBA575F3999E8C6 /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
+		85CE70B1705E175204C7AEB2ED4D70FC /* libRESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESideMenu.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		89F777D63A840B70A4684D0B931CD737 /* Pods-ChopstickNotesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChopstickNotesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8CD1CC88A4BD77632E94FE8D892B1FD9 /* Pods-ChopstickNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChopstickNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		93C23813D581029DE70453557FC22798 /* Pods-ChopstickNotesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChopstickNotesTests-resources.sh"; sourceTree = "<group>"; };
+		9F8E49B354D41A66BC783CE018200F52 /* Pods-ChopstickNotes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChopstickNotes-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4DC9B3732C2ADAE686612F8AAD8CD35 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		A7710A976F9CBCB179163A23C3ED5695 /* Pods-ChopstickNotesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChopstickNotesTests-dummy.m"; sourceTree = "<group>"; };
+		B1446D141BC175E0F15449E635329D19 /* Pods-ChopstickNotesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChopstickNotesTests-frameworks.sh"; sourceTree = "<group>"; };
+		B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFAC25D74961189E198F1D109AF79652 /* Pods-ChopstickNotesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChopstickNotesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD28BA00B197B91031B8A0CB2AC7CA47 /* Pods-ChopstickNotesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChopstickNotesUITests-dummy.m"; sourceTree = "<group>"; };
+		CD63253925363F02371255D38C5C8FF7 /* libPods-ChopstickNotesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChopstickNotesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F74BB63EDDF911264503A85B8BFE8A /* Pods-ChopstickNotes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChopstickNotes-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7ED083E3568A6F851FC8623D4A09D25 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8966691897364BB950C4ED5E2AD1347 /* Pods-ChopstickNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChopstickNotes.release.xcconfig"; sourceTree = "<group>"; };
+		ED7E9F16B2AA98734172037E463643C9 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		F7A754B9269C00782706A436A7C8DD77 /* RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		F7FD59457AF9B8E39F3893328C540408 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		F9DE70FD7DD08F4B249FA4AB0EF7ADE5 /* Pods-ChopstickNotesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChopstickNotesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA38A9A08D214B769917D2A956A3754 /* Pods-ChopstickNotesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChopstickNotesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EA173C652FCF13D57D218CDAED42A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BE25EF51BAFBC40C222365668B3321 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F83AA040073B7EE38034A6042B25A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2BE4B00D4AA077C4F4EA28F906B5793 /* Foundation.framework in Frameworks */,
+				CF30AB91AC1512C069D2BDC1DB11DC7B /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6E05678C56FE3659263D6545B29A2B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196CBDA88DC996FEAD176CC07A00E2AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23D9C0DC2CD629DAF25C76C74C7C45B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0730378CB16BEDCBA422BE5D3A3E245E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACE1566F3BE3D05FB0CA92F845689F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44EDD6257246E91ED920B225CF0E9E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D1A11700B31005434B1175801FB1FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				619769AFB7B45AD3D0B35B57D66DD99B /* Pods-acknowledgements.markdown */,
+				3798AA58DD6392EB5427A2125670312C /* Pods-acknowledgements.plist */,
+				25562730F92C5E8A484363EF42FEE709 /* Pods-dummy.m */,
+				139FCED58515653FBE6267E21D47A786 /* Pods-frameworks.sh */,
+				4D130AA0516F720CDE583FD909459E85 /* Pods-resources.sh */,
+				27DB1777C22A6DD723ACD2DE52CB4152 /* Pods.debug.xcconfig */,
+				0852D234296A593D7D50DADADE94F91B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		25C4B7FB4AC33AAED5743743A15C17CD /* Pods-ChopstickNotes */ = {
+			isa = PBXGroup;
+			children = (
+				9F8E49B354D41A66BC783CE018200F52 /* Pods-ChopstickNotes-acknowledgements.markdown */,
+				E2F74BB63EDDF911264503A85B8BFE8A /* Pods-ChopstickNotes-acknowledgements.plist */,
+				09CB1719BF587F03FEFAA5B067842B46 /* Pods-ChopstickNotes-dummy.m */,
+				5ADBE52E55729384D91F6ABA37384473 /* Pods-ChopstickNotes-frameworks.sh */,
+				0298AA71F44D31A656ECF2AD34CE4276 /* Pods-ChopstickNotes-resources.sh */,
+				8CD1CC88A4BD77632E94FE8D892B1FD9 /* Pods-ChopstickNotes.debug.xcconfig */,
+				E8966691897364BB950C4ED5E2AD1347 /* Pods-ChopstickNotes.release.xcconfig */,
+			);
+			name = "Pods-ChopstickNotes";
+			path = "Target Support Files/Pods-ChopstickNotes";
+			sourceTree = "<group>";
+		};
+		3926C638AD0708942C88C2BC89261735 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				258B0C8029B3982F03A30ED9FB271283 /* Foundation.framework */,
+				B18F24645AA4D651DFC7B69A3A0833DB /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		401498955372658D68BC666E8D637B3A /* Pods-ChopstickNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89F777D63A840B70A4684D0B931CD737 /* Pods-ChopstickNotesUITests-acknowledgements.markdown */,
+				13088B133A299CB09CAE48A6D6CD71DE /* Pods-ChopstickNotesUITests-acknowledgements.plist */,
+				CD28BA00B197B91031B8A0CB2AC7CA47 /* Pods-ChopstickNotesUITests-dummy.m */,
+				09B66B6DFD0A1876CDD5A0F5048AD8C9 /* Pods-ChopstickNotesUITests-frameworks.sh */,
+				3C4BD63D91AFC866A3C858ED37FC202B /* Pods-ChopstickNotesUITests-resources.sh */,
+				F9DE70FD7DD08F4B249FA4AB0EF7ADE5 /* Pods-ChopstickNotesUITests.debug.xcconfig */,
+				BFAC25D74961189E198F1D109AF79652 /* Pods-ChopstickNotesUITests.release.xcconfig */,
+			);
+			name = "Pods-ChopstickNotesUITests";
+			path = "Target Support Files/Pods-ChopstickNotesUITests";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3926C638AD0708942C88C2BC89261735 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CAC5E507715BCF8A5904F14310E860E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82D22D92FAE7F41E7C15DC141043D76C /* RESideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CF33CFFA9BD0FCC06224AE992A41D4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7ED083E3568A6F851FC8623D4A09D25 /* libPods.a */,
+				3EB7797355B7A450F14813630163B71E /* libPods-ChopstickNotes.a */,
+				CD63253925363F02371255D38C5C8FF7 /* libPods-ChopstickNotesTests.a */,
+				67D34E71F4086004F9DAE7FC865D2AA9 /* libPods-ChopstickNotesUITests.a */,
+				85CE70B1705E175204C7AEB2ED4D70FC /* libRESideMenu.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				5CAC5E507715BCF8A5904F14310E860E /* Pods */,
+				6CF33CFFA9BD0FCC06224AE992A41D4D /* Products */,
+				883A07BE7C15510E1EC382F34E863DD3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82D22D92FAE7F41E7C15DC141043D76C /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				ED7E9F16B2AA98734172037E463643C9 /* RECommonFunctions.h */,
+				4C89622E224947A15030C562F990416B /* RECommonFunctions.m */,
+				81578034A7B1E40B9EBA575F3999E8C6 /* RESideMenu.h */,
+				80CA8B732F5BDFC0EAE884FCB2248340 /* RESideMenu.m */,
+				A4DC9B3732C2ADAE686612F8AAD8CD35 /* UIViewController+RESideMenu.h */,
+				F7FD59457AF9B8E39F3893328C540408 /* UIViewController+RESideMenu.m */,
+				C1729E123D8B5CDB85B13E99F84202B9 /* Support Files */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		883A07BE7C15510E1EC382F34E863DD3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22D1A11700B31005434B1175801FB1FC /* Pods */,
+				25C4B7FB4AC33AAED5743743A15C17CD /* Pods-ChopstickNotes */,
+				C8CAACA1F4DD3C90CDD95A2D49359AAF /* Pods-ChopstickNotesTests */,
+				401498955372658D68BC666E8D637B3A /* Pods-ChopstickNotesUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C1729E123D8B5CDB85B13E99F84202B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B6FDB15172540B3DE8DE1CD8302F8A7 /* RESideMenu.xcconfig */,
+				2EE6D08148AE98B6553EF9721FB4F3AC /* RESideMenu-dummy.m */,
+				F7A754B9269C00782706A436A7C8DD77 /* RESideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RESideMenu";
+			sourceTree = "<group>";
+		};
+		C8CAACA1F4DD3C90CDD95A2D49359AAF /* Pods-ChopstickNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEA38A9A08D214B769917D2A956A3754 /* Pods-ChopstickNotesTests-acknowledgements.markdown */,
+				4486546B58EA430B10471BEF2EE3CA1A /* Pods-ChopstickNotesTests-acknowledgements.plist */,
+				A7710A976F9CBCB179163A23C3ED5695 /* Pods-ChopstickNotesTests-dummy.m */,
+				B1446D141BC175E0F15449E635329D19 /* Pods-ChopstickNotesTests-frameworks.sh */,
+				93C23813D581029DE70453557FC22798 /* Pods-ChopstickNotesTests-resources.sh */,
+				1555BAC701344CD1CE535EA2B8A2037B /* Pods-ChopstickNotesTests.debug.xcconfig */,
+				2141D526941061C902E528499251F1F4 /* Pods-ChopstickNotesTests.release.xcconfig */,
+			);
+			name = "Pods-ChopstickNotesTests";
+			path = "Target Support Files/Pods-ChopstickNotesTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E1A6C95D77826D2A830507AFA79AA15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30E0437B4A61E6E244BE4C82C17F2B2 /* RECommonFunctions.h in Headers */,
+				906777CE59F8FD2A36D49035436FEF1F /* RESideMenu.h in Headers */,
+				68EAE9433B3947E7EFC45386257AD523 /* UIViewController+RESideMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CAC64A38989F438F4EECE85B904234B /* Pods-ChopstickNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DD1886E4DFC482D7DE4EAB81394EA9B /* Build configuration list for PBXNativeTarget "Pods-ChopstickNotesTests" */;
+			buildPhases = (
+				2FB5275D9958EF4704524B3AF3152AA4 /* Sources */,
+				5EA173C652FCF13D57D218CDAED42A81 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08579F7FB18229F0E7E011515675EFB5 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChopstickNotesTests";
+			productName = "Pods-ChopstickNotesTests";
+			productReference = CD63253925363F02371255D38C5C8FF7 /* libPods-ChopstickNotesTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		874DF57D55A6E01FB780EE771D2972BB /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B98BA83A970EE295C694CBEC1D009899 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				0F13E0983A87059922E46AC604C98F73 /* Sources */,
+				B6E05678C56FE3659263D6545B29A2B9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE3CE14152D513D4E3440F5225B68A33 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = E7ED083E3568A6F851FC8623D4A09D25 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		90F5D48D66789AB794E52921E14680CA /* RESideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA552FC70565E8FD20E2176E4641C396 /* Build configuration list for PBXNativeTarget "RESideMenu" */;
+			buildPhases = (
+				8D01E411DC2F5D123F0A2DA7574468AC /* Sources */,
+				5F83AA040073B7EE38034A6042B25A29 /* Frameworks */,
+				1E1A6C95D77826D2A830507AFA79AA15 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RESideMenu;
+			productName = RESideMenu;
+			productReference = 85CE70B1705E175204C7AEB2ED4D70FC /* libRESideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D773865BA75128B8EA58A02D5CF9085F /* Pods-ChopstickNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5602A03B12D6654C0D6D26E0784D2CF /* Build configuration list for PBXNativeTarget "Pods-ChopstickNotesUITests" */;
+			buildPhases = (
+				D296B410C666DDE7DA106B4B43F8878D /* Sources */,
+				D23D9C0DC2CD629DAF25C76C74C7C45B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5823572BEB62C4866580CFF96B68623B /* PBXTargetDependency */,
+			);
+			name = "Pods-ChopstickNotesUITests";
+			productName = "Pods-ChopstickNotesUITests";
+			productReference = 67D34E71F4086004F9DAE7FC865D2AA9 /* libPods-ChopstickNotesUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DBD9943426D9BB063560142D187F507D /* Pods-ChopstickNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EC782F69810EC704196B8E162AEA389 /* Build configuration list for PBXNativeTarget "Pods-ChopstickNotes" */;
+			buildPhases = (
+				F4CCAABA3599FAA1797A0B779061C15B /* Sources */,
+				FACE1566F3BE3D05FB0CA92F845689F2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DCC646C031F5CCE9B8856BE1729560 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChopstickNotes";
+			productName = "Pods-ChopstickNotes";
+			productReference = 3EB7797355B7A450F14813630163B71E /* libPods-ChopstickNotes.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6CF33CFFA9BD0FCC06224AE992A41D4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				874DF57D55A6E01FB780EE771D2972BB /* Pods */,
+				DBD9943426D9BB063560142D187F507D /* Pods-ChopstickNotes */,
+				1CAC64A38989F438F4EECE85B904234B /* Pods-ChopstickNotesTests */,
+				D773865BA75128B8EA58A02D5CF9085F /* Pods-ChopstickNotesUITests */,
+				90F5D48D66789AB794E52921E14680CA /* RESideMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F13E0983A87059922E46AC604C98F73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7AF7955614F9DC12DD2EC6AEF674A02 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FB5275D9958EF4704524B3AF3152AA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D3472FC5488FFC0E501DD490BE40FFE /* Pods-ChopstickNotesTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01E411DC2F5D123F0A2DA7574468AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437020F969E91054AC9349D7D6C5D6AC /* RECommonFunctions.m in Sources */,
+				D31CBF23FC9D1A3CD632EA0597F5725E /* RESideMenu-dummy.m in Sources */,
+				6DC044E20C71DB06F9A9FB4B09A759CF /* RESideMenu.m in Sources */,
+				A4941562B895773B4F6BA8DE06D2AD14 /* UIViewController+RESideMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D296B410C666DDE7DA106B4B43F8878D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB138DEA7D430445C41ABFDD550CDA8 /* Pods-ChopstickNotesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CCAABA3599FAA1797A0B779061C15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85FCC4C733210548D1CF9220391497F1 /* Pods-ChopstickNotes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DCC646C031F5CCE9B8856BE1729560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RESideMenu;
+			target = 90F5D48D66789AB794E52921E14680CA /* RESideMenu */;
+			targetProxy = CE83A74B15EF56EFA0DF0971537E6A29 /* PBXContainerItemProxy */;
+		};
+		08579F7FB18229F0E7E011515675EFB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RESideMenu;
+			target = 90F5D48D66789AB794E52921E14680CA /* RESideMenu */;
+			targetProxy = C1CC63747ACD5281C7EF5344200A5D8D /* PBXContainerItemProxy */;
+		};
+		5823572BEB62C4866580CFF96B68623B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RESideMenu;
+			target = 90F5D48D66789AB794E52921E14680CA /* RESideMenu */;
+			targetProxy = 01A32A13BCB1878A113A2FA6B224E84F /* PBXContainerItemProxy */;
+		};
+		EE3CE14152D513D4E3440F5225B68A33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RESideMenu;
+			target = 90F5D48D66789AB794E52921E14680CA /* RESideMenu */;
+			targetProxy = 11DB7DA92C9349F8F02F0170C5DA3893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A4D926ED033F4C6CF2E6B3D77760EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAC25D74961189E198F1D109AF79652 /* Pods-ChopstickNotesUITests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1D45469F14FB121A2CBD9C0F63879D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2141D526941061C902E528499251F1F4 /* Pods-ChopstickNotesTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		243D858B739B483E02A2862896EE2340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27DB1777C22A6DD723ACD2DE52CB4152 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B94E1FE48980E1C456DB932DD7985CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0852D234296A593D7D50DADADE94F91B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		43254FF89CE45D3278E898CE1FA02FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1555BAC701344CD1CE535EA2B8A2037B /* Pods-ChopstickNotesTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4357DEE2C81282A970D2E02E1C807FD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DE70FD7DD08F4B249FA4AB0EF7ADE5 /* Pods-ChopstickNotesUITests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8298A4DD73446594BCF45D7B7073E4EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6FDB15172540B3DE8DE1CD8302F8A7 /* RESideMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		950156807D0C62326CDA093E60691884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD1CC88A4BD77632E94FE8D892B1FD9 /* Pods-ChopstickNotes.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96E651F32D83A7B15455E75B63F5754F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6FDB15172540B3DE8DE1CD8302F8A7 /* RESideMenu.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RESideMenu/RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8ECC4381482C59D4B62AC7EA8D0B86B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8966691897364BB950C4ED5E2AD1347 /* Pods-ChopstickNotes.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DD1886E4DFC482D7DE4EAB81394EA9B /* Build configuration list for PBXNativeTarget "Pods-ChopstickNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43254FF89CE45D3278E898CE1FA02FE7 /* Debug */,
+				1D45469F14FB121A2CBD9C0F63879D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EC782F69810EC704196B8E162AEA389 /* Build configuration list for PBXNativeTarget "Pods-ChopstickNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950156807D0C62326CDA093E60691884 /* Debug */,
+				D8ECC4381482C59D4B62AC7EA8D0B86B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5602A03B12D6654C0D6D26E0784D2CF /* Build configuration list for PBXNativeTarget "Pods-ChopstickNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4357DEE2C81282A970D2E02E1C807FD6 /* Debug */,
+				0A4D926ED033F4C6CF2E6B3D77760EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B98BA83A970EE295C694CBEC1D009899 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243D858B739B483E02A2862896EE2340 /* Debug */,
+				3B94E1FE48980E1C456DB932DD7985CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA552FC70565E8FD20E2176E4641C396 /* Build configuration list for PBXNativeTarget "RESideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8298A4DD73446594BCF45D7B7073E4EB /* Debug */,
+				96E651F32D83A7B15455E75B63F5754F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

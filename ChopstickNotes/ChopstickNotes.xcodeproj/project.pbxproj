@@ -17,6 +17,8 @@
 		21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E21C74444400F7F0FD /* WLCNavigationController.m */; };
 		21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E51C74448700F7F0FD /* WLCHomeController.m */; };
 		21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */; };
+		21E5B5F61C75962800F7F0FD /* WLCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F51C75962800F7F0FD /* WLCTabBar.m */; };
+		9569C6B798C21ADA7589BE80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61BDFA27045E0A5E23BB61B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,11 @@
 		21E5B5E71C7444CE00F7F0FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		21E5B5F11C744A4900F7F0FD /* WLCRemindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCRemindController.h; sourceTree = "<group>"; };
 		21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCRemindController.m; sourceTree = "<group>"; };
+		21E5B5F41C75962800F7F0FD /* WLCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCTabBar.h; sourceTree = "<group>"; };
+		21E5B5F51C75962800F7F0FD /* WLCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCTabBar.m; sourceTree = "<group>"; };
+		42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A61BDFA27045E0A5E23BB61B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9569C6B798C21ADA7589BE80 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +101,8 @@
 				21E5B5B41C7440E400F7F0FD /* ChopstickNotesTests */,
 				21E5B5BF1C7440E400F7F0FD /* ChopstickNotesUITests */,
 				21E5B5991C7440E400F7F0FD /* Products */,
+				56985C2BD87175F56B66DEBC /* Pods */,
+				C53ECEBE0189EC8F1593852B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +276,8 @@
 		21E5B5DC1C74425100F7F0FD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21E5B5F41C75962800F7F0FD /* WLCTabBar.h */,
+				21E5B5F51C75962800F7F0FD /* WLCTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +334,23 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		56985C2BD87175F56B66DEBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */,
+				ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C53ECEBE0189EC8F1593852B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A61BDFA27045E0A5E23BB61B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,9 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21E5B5C51C7440E400F7F0FD /* Build configuration list for PBXNativeTarget "ChopstickNotes" */;
 			buildPhases = (
+				D05CE6C63B867F2D0BC43162 /* Check Pods Manifest.lock */,
 				21E5B5941C7440E400F7F0FD /* Sources */,
 				21E5B5951C7440E400F7F0FD /* Frameworks */,
 				21E5B5961C7440E400F7F0FD /* Resources */,
+				D791EED77279AE0A5973E3D0 /* Embed Pods Frameworks */,
+				43069A360A226E18D4FD396F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -447,6 +479,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43069A360A226E18D4FD396F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D05CE6C63B867F2D0BC43162 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D791EED77279AE0A5973E3D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21E5B5941C7440E400F7F0FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,6 +537,7 @@
 				21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */,
 				21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */,
 				21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */,
+				21E5B5F61C75962800F7F0FD /* WLCTabBar.m in Sources */,
 				21E5B5E01C74442C00F7F0FD /* WLCTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +667,7 @@
 		};
 		21E5B5C61C7440E400F7F0FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ChopstickNotes/PrefixHeader.pch";
@@ -598,6 +680,7 @@
 		};
 		21E5B5C71C7440E400F7F0FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ChopstickNotes/PrefixHeader.pch";
@@ -675,6 +758,7 @@
 				21E5B5C71C7440E400F7F0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21E5B5C81C7440E400F7F0FD /* Build configuration list for PBXNativeTarget "ChopstickNotesTests" */ = {
 			isa = XCConfigurationList;
@@ -683,6 +767,7 @@
 				21E5B5CA1C7440E400F7F0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21E5B5CB1C7440E400F7F0FD /* Build configuration list for PBXNativeTarget "ChopstickNotesUITests" */ = {
 			isa = XCConfigurationList;
@@ -691,6 +776,7 @@
 				21E5B5CD1C7440E400F7F0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
