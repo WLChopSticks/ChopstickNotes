@@ -21,6 +21,7 @@
 		21F6418B1C9BAC3D0053FCF8 /* WLCNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6418A1C9BAC3D0053FCF8 /* WLCNoteController.m */; };
 		21F6418E1C9BAD140053FCF8 /* WLCContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6418D1C9BAD140053FCF8 /* WLCContentTableView.m */; };
 		21F641911C9BB3940053FCF8 /* WLCNoteCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641901C9BB3940053FCF8 /* WLCNoteCollectionController.m */; };
+		21F641941C9BBA010053FCF8 /* WLCNoteDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641931C9BBA010053FCF8 /* WLCNoteDetailController.m */; };
 		9569C6B798C21ADA7589BE80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61BDFA27045E0A5E23BB61B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		21F6418D1C9BAD140053FCF8 /* WLCContentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCContentTableView.m; sourceTree = "<group>"; };
 		21F6418F1C9BB3940053FCF8 /* WLCNoteCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCNoteCollectionController.h; sourceTree = "<group>"; };
 		21F641901C9BB3940053FCF8 /* WLCNoteCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCNoteCollectionController.m; sourceTree = "<group>"; };
+		21F641921C9BBA010053FCF8 /* WLCNoteDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCNoteDetailController.h; sourceTree = "<group>"; };
+		21F641931C9BBA010053FCF8 /* WLCNoteDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCNoteDetailController.m; sourceTree = "<group>"; };
 		42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A61BDFA27045E0A5E23BB61B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -353,6 +356,8 @@
 				21F6418A1C9BAC3D0053FCF8 /* WLCNoteController.m */,
 				21F6418F1C9BB3940053FCF8 /* WLCNoteCollectionController.h */,
 				21F641901C9BB3940053FCF8 /* WLCNoteCollectionController.m */,
+				21F641921C9BBA010053FCF8 /* WLCNoteDetailController.h */,
+				21F641931C9BBA010053FCF8 /* WLCNoteDetailController.m */,
 			);
 			name = Controller;
 			path = ViewController;
@@ -563,6 +568,7 @@
 				21F6418E1C9BAD140053FCF8 /* WLCContentTableView.m in Sources */,
 				21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */,
 				21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */,
+				21F641941C9BBA010053FCF8 /* WLCNoteDetailController.m in Sources */,
 				21E5B5F61C75962800F7F0FD /* WLCTabBar.m in Sources */,
 				21F641911C9BB3940053FCF8 /* WLCNoteCollectionController.m in Sources */,
 				21E5B5E01C74442C00F7F0FD /* WLCTabBarController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "WLCNoteController.h"
 #import "WLCNoteCollectionController.h"
+#import "WLCNoteDetailController.h"
 
 #define TableID @"TableID"
 
@@ -59,6 +60,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"%ld",indexPath.row);
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    WLCNoteDetailController *noteDetailVC = [[WLCNoteDetailController alloc]init];
+    noteDetailVC.noteTitle = cell.textLabel.text;
+    [self.navigationController pushViewController:noteDetailVC animated:YES];
 }
 
 #pragma -mark 转换页面按钮点击事件
