@@ -20,6 +20,7 @@
     
     //设置字体颜色
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : WORD_COLOR}];
+    [self.navigationBar setTintColor:WORD_COLOR];
     
 }
 

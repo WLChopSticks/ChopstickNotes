@@ -29,8 +29,6 @@
 
 #pragma -mark 布局
 -(void)decorateUI {
-
-    self.view.frame = WLCSCREENBOUNDS;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TableID];
     
@@ -50,8 +48,8 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableID forIndexPath:indexPath];
-//    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
-    cell.textLabel.text = @"123";
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    
     
     return cell;
 }
@@ -63,6 +61,7 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     WLCNoteDetailController *noteDetailVC = [[WLCNoteDetailController alloc]init];
     noteDetailVC.noteTitle = cell.textLabel.text;
+    noteDetailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:noteDetailVC animated:YES];
 }
 
