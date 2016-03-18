@@ -8,15 +8,18 @@
 
 #import "WLCNoteDetailController.h"
 #import "WLCComposeNoteView.h"
+
 //数据库
-#import <CoreData/CoreData.h>
+#import "WLCCoreDataTool.h"
 #import "Note.h"
+
 
 @interface WLCNoteDetailController ()
 
 @property (weak, nonatomic) WLCComposeNoteView *composeNoteView;
 @property (strong, nonatomic) NSMutableArray *notes;
 @property (strong, nonatomic) NSManagedObjectContext *context;
+
 
 @end
 
@@ -29,7 +32,10 @@
     [self decorateUI];
     
     //开启数据库
-    [self setUpDataBase];
+    WLCCoreDataTool *coreDataTool = [WLCCoreDataTool sharedCoreDataTool];
+    [coreDataTool setUpDataBase];
+    self.context = coreDataTool.context;
+
 }
 
 #pragma -mark 布局
@@ -57,27 +63,11 @@
         
 }
 
-#pragma -mark coreData数据库初始化
--(void)setUpDataBase {
- 
-    NSString *modelPath = [[NSBundle mainBundle]pathForResource:@"NoteStore" ofType:@"momd"];
-    NSManagedObjectModel *model = [[NSManagedObjectModel alloc]initWithContentsOfURL:[NSURL fileURLWithPath:modelPath]];
-    
-    NSPersistentStoreCoordinator *persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]initWithManagedObjectModel:model];
-    
-    NSString *filePath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"note.sqlite"];
-    [persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[NSURL fileURLWithPath:filePath] options:nil error:nil];
-    
-    NSManagedObjectContext *context = [[NSManagedObjectContext alloc]initWithConcurrencyType:NSMainQueueConcurrencyType];
-    self.context = context;
-    
-    context.persistentStoreCoordinator = persistentStoreCoordinator;
-}
+
 
 #pragma -mark 完成按钮点击事件
 -(void)finishBarBtnClicking {
     NSLog(@"完成按钮点击了");
-    NSLog(@"%@--%@",self.composeNoteView.titleField.text,self.composeNoteView.noteTextView.text);
     //保存内容
     Note *note = [[Note alloc]initWithEntity:[NSEntityDescription entityForName:@"Note" inManagedObjectContext:self.context] insertIntoManagedObjectContext:self.context];
     note.title = self.composeNoteView.titleField.text;
