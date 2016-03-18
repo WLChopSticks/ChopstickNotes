@@ -1,5 +1,5 @@
 //
-//  WLCNoteController.h
+//  WLCNoteTableController.h
 //  ChopstickNotes
 //
 //  Created by 王 on 16/3/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WLCNoteController : UIViewController
+@interface WLCNoteTableController : UITableViewController
 
 @end

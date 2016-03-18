@@ -7,12 +7,17 @@
 //
 
 #import "WLCNoteController.h"
+#import "WLCNoteTableController.h"
 #import "WLCNoteCollectionController.h"
 #import "WLCNoteDetailController.h"
 
 #define TableID @"TableID"
 
 @interface WLCNoteController ()
+
+@property (assign, nonatomic) BOOL isCollectionVC;
+@property (weak, nonatomic) WLCNoteCollectionController *noteCollectionVC;
+@property (weak, nonatomic) WLCNoteTableController *noteTableVC;
 
 @end
 
@@ -30,48 +35,53 @@
 #pragma -mark 布局
 -(void)decorateUI {
     self.title = @"我的笔记";
-    self.view.backgroundColor = randomColor;
+//    self.view.backgroundColor = randomColor;
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TableID];
     
     //添加页面转换按钮
     UIBarButtonItem *changeViewBtn = [[UIBarButtonItem alloc]initWithTitle:@"变化" style:UIBarButtonItemStylePlain target:self action:@selector(changeViewButtonClicking)];
     self.navigationItem.rightBarButtonItem = changeViewBtn;
-
-}
-
-#pragma -mark tableView数据源代理方法
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 25;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableID forIndexPath:indexPath];
-    cell.textLabel.text = self.title;
     
-    return cell;
+    //添加collectionView的页面布局
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    WLCNoteCollectionController *noteCollectionVC = [[WLCNoteCollectionController alloc]initWithCollectionViewLayout:layout];
+    self.noteCollectionVC = noteCollectionVC;
+    [self addChildViewController:noteCollectionVC];
+    [self.view addSubview:noteCollectionVC.view];
+
+    //添加tableview的页面布局
+    WLCNoteTableController *noteTableVC = [[WLCNoteTableController alloc]init];
+    self.noteTableVC = noteTableVC;
+    [self addChildViewController:noteTableVC];
+    [self.view addSubview:noteTableVC.view];
+    
+    
 }
 
-//点击cell后回传控制器进行页面跳转
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    NSLog(@"%ld",indexPath.row);
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    WLCNoteDetailController *noteDetailVC = [[WLCNoteDetailController alloc]init];
-    noteDetailVC.noteTitle = cell.textLabel.text;
-    [self.navigationController pushViewController:noteDetailVC animated:YES];
-}
 
 #pragma -mark 转换页面按钮点击事件
 -(void)changeViewButtonClicking {
     NSLog(@"转换页面按钮点击了");
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-    WLCNoteCollectionController *noteCollectionVC = [[WLCNoteCollectionController alloc]initWithCollectionViewLayout:layout];
-    [self.navigationController setViewControllers:@[noteCollectionVC] animated:NO];
+
+    if (!self.isCollectionVC) {
+       [self transitionFromViewController:self.noteTableVC toViewController:self.noteCollectionVC duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+           NSLog(@"此处添加转换页面的动画");
+       } completion:^(BOOL finished) {
+           NSLog(@"此处添加传唤页面结束后动作");
+       }];
+        
+        self.isCollectionVC = YES;
+    }else {
+        [self transitionFromViewController:self.noteCollectionVC toViewController:self.noteTableVC duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+            NSLog(@"此处添加转换页面的动画");
+        } completion:^(BOOL finished) {
+            NSLog(@"此处添加传唤页面结束后动作");
+        }];
+        
+        self.isCollectionVC = NO;
+    }
+    
+    
 }
 
 
