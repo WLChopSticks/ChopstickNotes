@@ -8,7 +8,7 @@
 
 #import "WLCTabBarController.h"
 #import "WLCNavigationController.h"
-#import "WLCHomeController.h"
+#import "WLCNoteController.h"
 #import "WLCRemindController.h"
 #import "WLCTabBar.h"
 
@@ -39,7 +39,7 @@
 - (void)addChildViewControllers {
     
     
-    WLCHomeController *homeVC = [[WLCHomeController alloc]init];
+    WLCNoteController *homeVC = [[WLCNoteController alloc]init];
     [self addEveryChildViewController:homeVC withTitle:@"我的笔记"];
     
     WLCRemindController *remindVC = [[WLCRemindController alloc]init];

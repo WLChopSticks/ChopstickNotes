@@ -15,10 +15,12 @@
 		21E5B5C11C7440E400F7F0FD /* ChopstickNotesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5C01C7440E400F7F0FD /* ChopstickNotesUITests.m */; };
 		21E5B5E01C74442C00F7F0FD /* WLCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5DF1C74442C00F7F0FD /* WLCTabBarController.m */; };
 		21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E21C74444400F7F0FD /* WLCNavigationController.m */; };
-		21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E51C74448700F7F0FD /* WLCHomeController.m */; };
 		21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */; };
 		21E5B5F61C75962800F7F0FD /* WLCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F51C75962800F7F0FD /* WLCTabBar.m */; };
 		21F641801C9B9D1B0053FCF8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6417F1C9B9D1B0053FCF8 /* UIView+Frame.m */; };
+		21F6418B1C9BAC3D0053FCF8 /* WLCNoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6418A1C9BAC3D0053FCF8 /* WLCNoteController.m */; };
+		21F6418E1C9BAD140053FCF8 /* WLCContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6418D1C9BAD140053FCF8 /* WLCContentTableView.m */; };
+		21F641911C9BB3940053FCF8 /* WLCNoteCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641901C9BB3940053FCF8 /* WLCNoteCollectionController.m */; };
 		9569C6B798C21ADA7589BE80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61BDFA27045E0A5E23BB61B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +59,6 @@
 		21E5B5DF1C74442C00F7F0FD /* WLCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCTabBarController.m; sourceTree = "<group>"; };
 		21E5B5E11C74444400F7F0FD /* WLCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCNavigationController.h; sourceTree = "<group>"; };
 		21E5B5E21C74444400F7F0FD /* WLCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCNavigationController.m; sourceTree = "<group>"; };
-		21E5B5E41C74448700F7F0FD /* WLCHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCHomeController.h; sourceTree = "<group>"; };
-		21E5B5E51C74448700F7F0FD /* WLCHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCHomeController.m; sourceTree = "<group>"; };
 		21E5B5E71C7444CE00F7F0FD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		21E5B5F11C744A4900F7F0FD /* WLCRemindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCRemindController.h; sourceTree = "<group>"; };
 		21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCRemindController.m; sourceTree = "<group>"; };
@@ -66,6 +66,12 @@
 		21E5B5F51C75962800F7F0FD /* WLCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCTabBar.m; sourceTree = "<group>"; };
 		21F6417E1C9B9D1B0053FCF8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		21F6417F1C9B9D1B0053FCF8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		21F641891C9BAC3D0053FCF8 /* WLCNoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCNoteController.h; sourceTree = "<group>"; };
+		21F6418A1C9BAC3D0053FCF8 /* WLCNoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCNoteController.m; sourceTree = "<group>"; };
+		21F6418C1C9BAD140053FCF8 /* WLCContentTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCContentTableView.h; sourceTree = "<group>"; };
+		21F6418D1C9BAD140053FCF8 /* WLCContentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCContentTableView.m; sourceTree = "<group>"; };
+		21F6418F1C9BB3940053FCF8 /* WLCNoteCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCNoteCollectionController.h; sourceTree = "<group>"; };
+		21F641901C9BB3940053FCF8 /* WLCNoteCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCNoteCollectionController.m; sourceTree = "<group>"; };
 		42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A61BDFA27045E0A5E23BB61B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,53 +169,12 @@
 		21E5B5CE1C74425100F7F0FD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				21E5B5CF1C74425100F7F0FD /* Home(首页) */,
+				21F641811C9BAC050053FCF8 /* Note(笔记) */,
 				21E5B5EC1C744A3200F7F0FD /* Remind(提醒) */,
 				21E5B5D41C74425100F7F0FD /* LeftItems(侧边栏) */,
 				21E5B5D91C74425100F7F0FD /* Main */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		21E5B5CF1C74425100F7F0FD /* Home(首页) */ = {
-			isa = PBXGroup;
-			children = (
-				21E5B5D01C74425100F7F0FD /* Model */,
-				21E5B5D11C74425100F7F0FD /* Other */,
-				21E5B5D21C74425100F7F0FD /* View */,
-				21E5B5D31C74425100F7F0FD /* ViewController */,
-			);
-			path = "Home(首页)";
-			sourceTree = "<group>";
-		};
-		21E5B5D01C74425100F7F0FD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		21E5B5D11C74425100F7F0FD /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		21E5B5D21C74425100F7F0FD /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		21E5B5D31C74425100F7F0FD /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				21E5B5E41C74448700F7F0FD /* WLCHomeController.h */,
-				21E5B5E51C74448700F7F0FD /* WLCHomeController.m */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		21E5B5D41C74425100F7F0FD /* LeftItems(侧边栏) */ = {
@@ -345,6 +310,52 @@
 				21F6417F1C9B9D1B0053FCF8 /* UIView+Frame.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		21F641811C9BAC050053FCF8 /* Note(笔记) */ = {
+			isa = PBXGroup;
+			children = (
+				21F641821C9BAC050053FCF8 /* Model */,
+				21F641831C9BAC050053FCF8 /* Other */,
+				21F641841C9BAC050053FCF8 /* View */,
+				21F641851C9BAC050053FCF8 /* Controller */,
+			);
+			path = "Note(笔记)";
+			sourceTree = "<group>";
+		};
+		21F641821C9BAC050053FCF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21F641831C9BAC050053FCF8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		21F641841C9BAC050053FCF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21F6418C1C9BAD140053FCF8 /* WLCContentTableView.h */,
+				21F6418D1C9BAD140053FCF8 /* WLCContentTableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21F641851C9BAC050053FCF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21F641891C9BAC3D0053FCF8 /* WLCNoteController.h */,
+				21F6418A1C9BAC3D0053FCF8 /* WLCNoteController.m */,
+				21F6418F1C9BB3940053FCF8 /* WLCNoteCollectionController.h */,
+				21F641901C9BB3940053FCF8 /* WLCNoteCollectionController.m */,
+			);
+			name = Controller;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		56985C2BD87175F56B66DEBC /* Pods */ = {
@@ -546,12 +557,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F641801C9B9D1B0053FCF8 /* UIView+Frame.m in Sources */,
+				21F6418B1C9BAC3D0053FCF8 /* WLCNoteController.m in Sources */,
 				21E5B5A01C7440E400F7F0FD /* AppDelegate.m in Sources */,
 				21E5B59D1C7440E400F7F0FD /* main.m in Sources */,
-				21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */,
+				21F6418E1C9BAD140053FCF8 /* WLCContentTableView.m in Sources */,
 				21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */,
 				21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */,
 				21E5B5F61C75962800F7F0FD /* WLCTabBar.m in Sources */,
+				21F641911C9BB3940053FCF8 /* WLCNoteCollectionController.m in Sources */,
 				21E5B5E01C74442C00F7F0FD /* WLCTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
