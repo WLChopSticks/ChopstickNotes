@@ -35,6 +35,9 @@
 		21F641BC1C9BDBDD0053FCF8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641AF1C9BDBDD0053FCF8 /* View+MASAdditions.m */; };
 		21F641BD1C9BDBDD0053FCF8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641B21C9BDBDD0053FCF8 /* ViewController+MASAdditions.m */; };
 		21F641C11C9BDC7A0053FCF8 /* WLCComposeNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641C01C9BDC7A0053FCF8 /* WLCComposeNoteView.m */; };
+		21F641C61C9BF91F0053FCF8 /* NoteStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21F641C41C9BF91F0053FCF8 /* NoteStore.xcdatamodeld */; };
+		21F641CB1C9BF96C0053FCF8 /* Note+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641C81C9BF96C0053FCF8 /* Note+CoreDataProperties.m */; };
+		21F641CC1C9BF96C0053FCF8 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F641CA1C9BF96C0053FCF8 /* Note.m */; };
 		9569C6B798C21ADA7589BE80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61BDFA27045E0A5E23BB61B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +121,11 @@
 		21F641B21C9BDBDD0053FCF8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		21F641BF1C9BDC7A0053FCF8 /* WLCComposeNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCComposeNoteView.h; sourceTree = "<group>"; };
 		21F641C01C9BDC7A0053FCF8 /* WLCComposeNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCComposeNoteView.m; sourceTree = "<group>"; };
+		21F641C51C9BF91F0053FCF8 /* NoteStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteStore.xcdatamodel; sourceTree = "<group>"; };
+		21F641C71C9BF96C0053FCF8 /* Note+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Note+CoreDataProperties.h"; sourceTree = "<group>"; };
+		21F641C81C9BF96C0053FCF8 /* Note+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataProperties.m"; sourceTree = "<group>"; };
+		21F641C91C9BF96C0053FCF8 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		21F641CA1C9BF96C0053FCF8 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A61BDFA27045E0A5E23BB61B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -220,6 +228,7 @@
 				21E5B5EC1C744A3200F7F0FD /* Remind(提醒) */,
 				21E5B5D41C74425100F7F0FD /* LeftItems(侧边栏) */,
 				21E5B5D91C74425100F7F0FD /* Main */,
+				21F641C31C9BF8F70053FCF8 /* CoreData */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -453,6 +462,18 @@
 			name = Libs;
 			sourceTree = "<group>";
 		};
+		21F641C31C9BF8F70053FCF8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				21F641C41C9BF91F0053FCF8 /* NoteStore.xcdatamodeld */,
+				21F641C71C9BF96C0053FCF8 /* Note+CoreDataProperties.h */,
+				21F641C81C9BF96C0053FCF8 /* Note+CoreDataProperties.m */,
+				21F641C91C9BF96C0053FCF8 /* Note.h */,
+				21F641CA1C9BF96C0053FCF8 /* Note.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		56985C2BD87175F56B66DEBC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,9 +674,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F641801C9B9D1B0053FCF8 /* UIView+Frame.m in Sources */,
+				21F641C61C9BF91F0053FCF8 /* NoteStore.xcdatamodeld in Sources */,
 				21F641BA1C9BDBDD0053FCF8 /* NSArray+MASAdditions.m in Sources */,
 				21F6418B1C9BAC3D0053FCF8 /* WLCNoteController.m in Sources */,
 				21F641BB1C9BDBDD0053FCF8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				21F641CB1C9BF96C0053FCF8 /* Note+CoreDataProperties.m in Sources */,
 				21E5B5A01C7440E400F7F0FD /* AppDelegate.m in Sources */,
 				21E5B59D1C7440E400F7F0FD /* main.m in Sources */,
 				21F641B81C9BDBDD0053FCF8 /* MASViewAttribute.m in Sources */,
@@ -663,6 +686,7 @@
 				21F641C11C9BDC7A0053FCF8 /* WLCComposeNoteView.m in Sources */,
 				21F641B41C9BDBDD0053FCF8 /* MASCompositeConstraint.m in Sources */,
 				21F6418E1C9BAD140053FCF8 /* WLCContentTableView.m in Sources */,
+				21F641CC1C9BF96C0053FCF8 /* Note.m in Sources */,
 				21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */,
 				21F641B91C9BDBDD0053FCF8 /* MASViewConstraint.m in Sources */,
 				21E5B5E31C74444400F7F0FD /* WLCNavigationController.m in Sources */,
@@ -915,6 +939,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21F641C41C9BF91F0053FCF8 /* NoteStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21F641C51C9BF91F0053FCF8 /* NoteStore.xcdatamodel */,
+			);
+			currentVersion = 21F641C51C9BF91F0053FCF8 /* NoteStore.xcdatamodel */;
+			path = NoteStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 21E5B5901C7440E400F7F0FD /* Project object */;
 }
