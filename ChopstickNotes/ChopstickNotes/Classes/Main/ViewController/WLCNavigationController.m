@@ -17,7 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //设置字体颜色
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : WORD_COLOR}];
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

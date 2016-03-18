@@ -24,7 +24,7 @@
     
     WLCTabBar *tab = [[WLCTabBar alloc]init];
 //    tab.frame = self.tabBar.frame;
-    NSLog(@"%@",self.view.subviews);
+//    NSLog(@"%@",self.view.subviews);
     
     [self setValue:tab forKeyPath:@"tabBar"];
 //    [self.tabBar addSubview:tab];

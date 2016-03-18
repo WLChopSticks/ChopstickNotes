@@ -18,6 +18,7 @@
 		21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5E51C74448700F7F0FD /* WLCHomeController.m */; };
 		21E5B5F31C744A4900F7F0FD /* WLCRemindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */; };
 		21E5B5F61C75962800F7F0FD /* WLCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B5F51C75962800F7F0FD /* WLCTabBar.m */; };
+		21F641801C9B9D1B0053FCF8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6417F1C9B9D1B0053FCF8 /* UIView+Frame.m */; };
 		9569C6B798C21ADA7589BE80 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61BDFA27045E0A5E23BB61B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCRemindController.m; sourceTree = "<group>"; };
 		21E5B5F41C75962800F7F0FD /* WLCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCTabBar.h; sourceTree = "<group>"; };
 		21E5B5F51C75962800F7F0FD /* WLCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCTabBar.m; sourceTree = "<group>"; };
+		21F6417E1C9B9D1B0053FCF8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		21F6417F1C9B9D1B0053FCF8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		42CD9F2E83CD675B7F2B2D76 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A61BDFA27045E0A5E23BB61B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA9D92A0E58E258ABF90ADA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +254,7 @@
 		21E5B5D91C74425100F7F0FD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				21F6417D1C9B9CF60053FCF8 /* Category */,
 				21E5B5DA1C74425100F7F0FD /* Model */,
 				21E5B5DB1C74425100F7F0FD /* Other */,
 				21E5B5DC1C74425100F7F0FD /* View */,
@@ -332,6 +336,15 @@
 				21E5B5F21C744A4900F7F0FD /* WLCRemindController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		21F6417D1C9B9CF60053FCF8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				21F6417E1C9B9D1B0053FCF8 /* UIView+Frame.h */,
+				21F6417F1C9B9D1B0053FCF8 /* UIView+Frame.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		56985C2BD87175F56B66DEBC /* Pods */ = {
@@ -532,6 +545,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F641801C9B9D1B0053FCF8 /* UIView+Frame.m in Sources */,
 				21E5B5A01C7440E400F7F0FD /* AppDelegate.m in Sources */,
 				21E5B59D1C7440E400F7F0FD /* main.m in Sources */,
 				21E5B5E61C74448700F7F0FD /* WLCHomeController.m in Sources */,

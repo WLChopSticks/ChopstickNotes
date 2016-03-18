@@ -14,7 +14,23 @@
 
 //屏幕尺寸
 #define WLCSCREENBOUNDS [UIScreen mainScreen].bounds
-#define WLCSCREENHEIGHT [UIScreen mainScreen].bounds.height
-#define WLCSCREENWIDTH [UIScreen mainScreen].bounds.width
+#define WLCSCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+#define WLCSCREENWIDTH [UIScreen mainScreen].bounds.size.width
+
+//软件整体字体颜色
+#define WORD_COLOR [UIColor brownColor]
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define randomColor RGB(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+
+//分类
+#import "UIView+Frame.h"
+
+//打印信息
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
 
 #endif /* PrefixHeader_pch */
