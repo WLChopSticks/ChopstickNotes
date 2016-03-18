@@ -26,6 +26,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma -mark 布局
 -(void)decorateUI {
+    self.title = @"我的笔记";
     self.view.backgroundColor = randomColor;
     
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];

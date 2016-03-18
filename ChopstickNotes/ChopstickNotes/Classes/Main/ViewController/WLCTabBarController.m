@@ -40,17 +40,16 @@
     
     
     WLCNoteController *homeVC = [[WLCNoteController alloc]init];
-    [self addEveryChildViewController:homeVC withTitle:@"我的笔记"];
+    [self addEveryChildViewController:homeVC withTitle:@""];
     
     WLCRemindController *remindVC = [[WLCRemindController alloc]init];
-    [self addEveryChildViewController:remindVC withTitle:@"我的提醒"];
+    [self addEveryChildViewController:remindVC withTitle:@""];
     
     
 }
 - (void)addEveryChildViewController: (UIViewController *)vc withTitle: (NSString *)title {
 
     WLCNavigationController *nav = [[WLCNavigationController alloc]initWithRootViewController:vc];
-    vc.title = title;
     [self addChildViewController:nav];
 }
 

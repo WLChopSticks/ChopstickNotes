@@ -28,6 +28,7 @@
 
 #pragma -mark 布局
 -(void)decorateUI {
+    self.title = @"我的笔记";
     self.view.backgroundColor = randomColor;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TableID];
