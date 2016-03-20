@@ -9,14 +9,26 @@
 #import "WLCNoteTableController.h"
 #import "WLCNoteCollectionController.h"
 #import "WLCNoteDetailController.h"
+#import "WLCComposeNoteView.h"
+
+#import "WLCCoreDataTool.h"
+#import "Note.h"
 
 #define TableID @"TableID"
 
 @interface WLCNoteTableController ()
 
+@property (strong, nonatomic) NSArray *notesArray;
+
 @end
 
 @implementation WLCNoteTableController
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //获取数据
+    [self getDataFromDataBase];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +36,10 @@
     
     //布局
     [self decorateUI];
+    
+    
+    //监听点击按钮点击的通知
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addComposeNotesButtonClickingNotice) name:@"addBtnClicking" object:nil];
     
 }
 
@@ -37,18 +53,28 @@
     
 }
 
+#pragma -mark 获取数据
+-(void)getDataFromDataBase {
+    
+    self.notesArray = [[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBase];
+    [self.tableView reloadData];
+    
+    
+}
+
 #pragma -mark tableView数据源代理方法
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 25;
+    return self.notesArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableID forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
+    Note *note = self.notesArray[indexPath.row];
+    cell.textLabel.text = note.title;
     
     
     return cell;
@@ -62,6 +88,13 @@
     WLCNoteDetailController *noteDetailVC = [[WLCNoteDetailController alloc]init];
     noteDetailVC.noteTitle = cell.textLabel.text;
     noteDetailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:noteDetailVC animated:YES];
+}
+
+#pragma -mark 点击添加笔记按钮的通知方法
+-(void)addComposeNotesButtonClickingNotice {
+    NSLog(@"收到点击创作按钮通知");
+    WLCNoteDetailController *noteDetailVC = [[WLCNoteDetailController alloc]init];
     [self.navigationController pushViewController:noteDetailVC animated:YES];
 }
 

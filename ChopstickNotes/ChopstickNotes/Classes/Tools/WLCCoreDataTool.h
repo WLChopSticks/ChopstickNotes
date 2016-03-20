@@ -8,14 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@class Note;
 @interface WLCCoreDataTool : NSObject
+
+//数据库上下文
+@property (strong, nonatomic) NSManagedObjectContext *context;
 
 //单例
 +(instancetype)sharedCoreDataTool;
-
 //coreData数据库初始化
 -(void)setUpDataBase;
-//数据库上下文
-@property (strong, nonatomic) NSManagedObjectContext *context;
+//获取数据库Note模型
++(Note *)getNoteModelFromDataBase;
+//获取数据库内容
+-(NSArray *)getNotesFromDataBase;
 
 @end

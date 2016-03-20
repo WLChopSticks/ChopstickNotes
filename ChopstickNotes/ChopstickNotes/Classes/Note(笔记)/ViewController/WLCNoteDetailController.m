@@ -17,9 +17,6 @@
 @interface WLCNoteDetailController ()
 
 @property (weak, nonatomic) WLCComposeNoteView *composeNoteView;
-@property (strong, nonatomic) NSMutableArray *notes;
-@property (strong, nonatomic) NSManagedObjectContext *context;
-
 
 @end
 
@@ -32,9 +29,8 @@
     [self decorateUI];
     
     //开启数据库
-    WLCCoreDataTool *coreDataTool = [WLCCoreDataTool sharedCoreDataTool];
-    [coreDataTool setUpDataBase];
-    self.context = coreDataTool.context;
+    [[WLCCoreDataTool sharedCoreDataTool]setUpDataBase];
+
 
 }
 
@@ -69,11 +65,11 @@
 -(void)finishBarBtnClicking {
     NSLog(@"完成按钮点击了");
     //保存内容
-    Note *note = [[Note alloc]initWithEntity:[NSEntityDescription entityForName:@"Note" inManagedObjectContext:self.context] insertIntoManagedObjectContext:self.context];
+    Note *note = [WLCCoreDataTool getNoteModelFromDataBase];
     note.title = self.composeNoteView.titleField.text;
     note.content = self.composeNoteView.noteTextView.text;
     NSError *error;
-    if (![self.context save:&error]) {
+    if (![[WLCCoreDataTool sharedCoreDataTool].context save:&error]) {
         NSLog(@"保存笔记出错---%@", [error localizedDescription]);
     }
     
@@ -83,12 +79,6 @@
 }
 
 
-//懒加载
--(NSMutableArray *)notes {
-    if (_notes == nil) {
-        _notes = [NSMutableArray array];
-    }
-    return _notes;
-}
+
 
 @end

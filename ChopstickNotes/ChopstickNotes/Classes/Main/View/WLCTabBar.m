@@ -8,6 +8,7 @@
 
 #import "WLCTabBar.h"
 
+
 //添加按钮向上偏移量
 #define AddBtn_Top -10
 
@@ -53,7 +54,7 @@
     [addBtn setTitleColor:WORD_COLOR forState:UIControlStateNormal];
     addBtn.backgroundColor = randomColor;
     [self addSubview:addBtn];
-    [addBtn addTarget:self action:@selector(addBtnClicking) forControlEvents:UIControlEventTouchUpInside];
+    [addBtn addTarget:self action:@selector(addBtnClicking:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -91,9 +92,11 @@
 }
 
 #pragma -mark 添加按钮的点击事件
--(void)addBtnClicking {
+-(void)addBtnClicking: (UIButton *)sender {
     
     NSLog(@"添加按钮点击了");
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"addBtnClicking" object:nil];
+    
 }
 
 

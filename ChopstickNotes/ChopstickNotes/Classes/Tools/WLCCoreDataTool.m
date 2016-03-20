@@ -43,4 +43,24 @@ static WLCCoreDataTool *_Instance = nil;
     context.persistentStoreCoordinator = persistentStoreCoordinator;
 }
 
++(Note *)getNoteModelFromDataBase {
+    
+    return [[Note alloc]initWithEntity:[NSEntityDescription entityForName:@"Note" inManagedObjectContext:[WLCCoreDataTool sharedCoreDataTool].context] insertIntoManagedObjectContext:[WLCCoreDataTool sharedCoreDataTool].context];
+}
+
+-(NSArray *)getNotesFromDataBase {
+    if (self.context == nil) {
+        [self setUpDataBase];
+    }
+    NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Note"];
+    
+//    request.predicate = [NSPredicate predicateWithFormat:@"title = 11"];
+    NSError *error = nil;
+    NSArray *arrTem = [self.context executeFetchRequest:request error:&error];
+    if (arrTem == nil) {
+        NSLog(@"笔记读取失败----%@",[error localizedDescription]);
+    }
+    return arrTem;
+}
+
 @end
