@@ -28,8 +28,10 @@
     //布局
     [self decorateUI];
     
-    //开启数据库
-    [[WLCCoreDataTool sharedCoreDataTool]setUpDataBase];
+    //传入标题证明是修改笔记,去数据库读取内容
+    if (self.noteTitle != nil) {
+        [self getNoteFromDataBase];
+    }
 
 
 }
@@ -75,6 +77,17 @@
     
     NSLog(@"%@",NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES));
     [self.navigationController popViewControllerAnimated:YES];
+    
+}
+
+#pragma -mark 读取数据库中内容
+-(void)getNoteFromDataBase {
+
+    //开启数据库
+//    [[WLCCoreDataTool sharedCoreDataTool]setUpDataBase];
+    Note *note = [[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBaseWithTitle:self.noteTitle].lastObject;
+    self.composeNoteView.titleField.text = note.title;
+    self.composeNoteView.noteTextView.text = note.content;
     
 }
 

@@ -21,6 +21,6 @@
 //获取数据库Note模型
 +(Note *)getNoteModelFromDataBase;
 //获取数据库内容
--(NSArray *)getNotesFromDataBase;
+-(NSArray *)getNotesFromDataBaseWithTitle: (NSString *)title;
 
 @end

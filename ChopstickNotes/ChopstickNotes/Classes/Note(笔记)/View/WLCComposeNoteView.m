@@ -11,6 +11,10 @@
 #define TITLE_MARGIN 5
 #define TITLE_HEIGHT 50
 
+@interface WLCComposeNoteView ()<UITextFieldDelegate>
+
+@end
+
 @implementation WLCComposeNoteView
 
 - (instancetype)init
@@ -32,6 +36,7 @@
     
     UITextField *titleField = [[UITextField alloc]init];
     self.titleField = titleField;
+    titleField.delegate = self;
     titleField.placeholder = @"请输入标题";
     [self addSubview:titleField];
     
@@ -71,6 +76,13 @@
         make.bottom.equalTo(self.mas_bottom);
     }];
 
+}
+
+#pragma -mark titleField代理方法
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    //删去'符号,否则数据库检索字符串时会崩溃
+    textField.text = [textField.text stringByReplacingOccurrencesOfString:@"'" withString:@""];
+    return YES;
 }
 
 

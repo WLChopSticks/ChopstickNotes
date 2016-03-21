@@ -48,13 +48,16 @@ static WLCCoreDataTool *_Instance = nil;
     return [[Note alloc]initWithEntity:[NSEntityDescription entityForName:@"Note" inManagedObjectContext:[WLCCoreDataTool sharedCoreDataTool].context] insertIntoManagedObjectContext:[WLCCoreDataTool sharedCoreDataTool].context];
 }
 
--(NSArray *)getNotesFromDataBase {
+-(NSArray *)getNotesFromDataBaseWithTitle: (NSString *)title {
     if (self.context == nil) {
         [self setUpDataBase];
     }
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Note"];
     
-//    request.predicate = [NSPredicate predicateWithFormat:@"title = 11"];
+    //是否需要通过标题筛选笔记
+    if (title != nil) {
+        request.predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"title = '%@'",title]];
+    }
     NSError *error = nil;
     NSArray *arrTem = [self.context executeFetchRequest:request error:&error];
     if (arrTem == nil) {

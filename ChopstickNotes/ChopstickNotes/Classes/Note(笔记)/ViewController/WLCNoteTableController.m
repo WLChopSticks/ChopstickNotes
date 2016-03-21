@@ -56,7 +56,7 @@
 #pragma -mark 获取数据
 -(void)getDataFromDataBase {
     
-    self.notesArray = [[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBase];
+    self.notesArray = [[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBaseWithTitle:nil];
     [self.tableView reloadData];
     
     
