@@ -66,4 +66,14 @@ static WLCCoreDataTool *_Instance = nil;
     return arrTem;
 }
 
+-(void)deleteNotesFromDataBaseWithTitle: (NSString *)title {
+    Note *note = [self getNotesFromDataBaseWithTitle:title].lastObject;
+    NSLog(@"%@",note);
+    [self.context deleteObject:note];
+    NSError *error;
+    if (![self.context save:&error]) {
+        NSLog(@"删除数据出现错误--%@",error);
+    }
+}
+
 @end

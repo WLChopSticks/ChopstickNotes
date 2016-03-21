@@ -22,5 +22,7 @@
 +(Note *)getNoteModelFromDataBase;
 //获取数据库内容
 -(NSArray *)getNotesFromDataBaseWithTitle: (NSString *)title;
+//删除数据库内容
+-(void)deleteNotesFromDataBaseWithTitle: (NSString *)title;
 
 @end

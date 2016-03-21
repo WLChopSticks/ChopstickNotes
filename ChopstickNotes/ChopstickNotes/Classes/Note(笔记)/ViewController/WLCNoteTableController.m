@@ -18,7 +18,7 @@
 
 @interface WLCNoteTableController ()
 
-@property (strong, nonatomic) NSArray *notesArray;
+@property (strong, nonatomic) NSMutableArray *notesArray;
 
 @end
 
@@ -56,7 +56,7 @@
 #pragma -mark 获取数据
 -(void)getDataFromDataBase {
     
-    self.notesArray = [[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBaseWithTitle:nil];
+    self.notesArray = [NSMutableArray arrayWithArray:[[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBaseWithTitle:nil]];
     [self.tableView reloadData];
     
     
@@ -89,6 +89,16 @@
     noteDetailVC.noteTitle = cell.textLabel.text;
     noteDetailVC.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:noteDetailVC animated:YES];
+}
+
+//右滑出现删除按钮
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    Note *note = self.notesArray[indexPath.row];
+    [[WLCCoreDataTool sharedCoreDataTool]deleteNotesFromDataBaseWithTitle:note.title];
+    [self.notesArray removeObject:note];
+    [self.tableView reloadData];
+    
 }
 
 #pragma -mark 点击添加笔记按钮的通知方法
