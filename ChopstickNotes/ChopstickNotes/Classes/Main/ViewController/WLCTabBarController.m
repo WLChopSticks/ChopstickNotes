@@ -11,8 +11,9 @@
 #import "WLCNoteController.h"
 #import "WLCRemindController.h"
 #import "WLCTabBar.h"
+#import "WLCNoteDetailController.h"
 
-@interface WLCTabBarController ()
+@interface WLCTabBarController ()<wlc_tabBarDelegate>
 
 @end
 
@@ -23,6 +24,7 @@
     // Do any additional setup after loading the view.
     
     WLCTabBar *tab = [[WLCTabBar alloc]init];
+    tab.wlc_delegate = self;
 //    tab.frame = self.tabBar.frame;
 //    NSLog(@"%@",self.view.subviews);
     
@@ -35,7 +37,7 @@
     
 }
 
-//添加子控制器
+#pragma -mark 添加子控制器
 - (void)addChildViewControllers {
     
     
@@ -52,6 +54,16 @@
     WLCNavigationController *nav = [[WLCNavigationController alloc]initWithRootViewController:vc];
     nav.title = title;
     [self addChildViewController:nav];
+}
+
+#pragma -mark 添加按钮点击代理方法
+-(void)wlc_tabBarDelegate:(WLCTabBar *)tabBar didClickComposeNoteBtn:(UIButton *)composeNoteBtn {
+    
+    WLCNoteDetailController *noteDetailVC = [[WLCNoteDetailController alloc]init];
+    WLCNavigationController *nav = [[WLCNavigationController alloc]initWithRootViewController:noteDetailVC];
+    [self presentViewController:nav animated:YES completion:^{
+        NSLog(@"笔记创作页面加载完毕");
+    }];
 }
 
 

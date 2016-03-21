@@ -17,6 +17,7 @@
 @interface WLCNoteDetailController ()
 
 @property (weak, nonatomic) WLCComposeNoteView *composeNoteView;
+@property (weak, nonatomic) UIBarButtonItem *finishBarBtn;
 
 @end
 
@@ -42,13 +43,19 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = self.noteTitle;
     
-    //右侧完成按钮
-    UIBarButtonItem *finishBarBtn = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(finishBarBtnClicking)];
-    self.navigationItem.rightBarButtonItem = finishBarBtn;
     
+    //笔记创作的view
     WLCComposeNoteView *composeNoteView = [[WLCComposeNoteView alloc]init];
     self.composeNoteView = composeNoteView;
     [self.view addSubview:composeNoteView];
+    [composeNoteView.titleField addTarget:self action:@selector(titleFieldDidChanged) forControlEvents:UIControlEventEditingChanged];
+
+    
+    
+    //右侧完成按钮
+    UIBarButtonItem *finishBarBtn = [[UIBarButtonItem alloc]initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(finishBarBtnClicking)];
+    self.finishBarBtn = finishBarBtn;
+    self.navigationItem.rightBarButtonItem = finishBarBtn;
     
     
     //约束
@@ -61,7 +68,12 @@
         
 }
 
-
+#pragma -mark 观察者检测是否输入了文字
+-(void)titleFieldDidChanged {
+    
+    NSLog(@"笔记标题进行修改...");
+    self.finishBarBtn.enabled = !(self.composeNoteView.titleField.text.length == 0);
+}
 
 #pragma -mark 完成按钮点击事件
 -(void)finishBarBtnClicking {
@@ -84,12 +96,15 @@
 -(void)getNoteFromDataBase {
 
     //开启数据库
-//    [[WLCCoreDataTool sharedCoreDataTool]setUpDataBase];
     Note *note = [[WLCCoreDataTool sharedCoreDataTool]getNotesFromDataBaseWithTitle:self.noteTitle].lastObject;
     self.composeNoteView.titleField.text = note.title;
     self.composeNoteView.noteTextView.text = note.content;
     
+    self.finishBarBtn.enabled = !(note.title.length == 0);
+    
 }
+
+
 
 
 

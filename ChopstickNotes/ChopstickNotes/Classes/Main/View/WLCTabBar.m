@@ -95,7 +95,10 @@
 -(void)addBtnClicking: (UIButton *)sender {
     
     NSLog(@"添加按钮点击了");
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"addBtnClicking" object:nil];
+    if ([self.wlc_delegate respondsToSelector:@selector(wlc_tabBarDelegate:didClickComposeNoteBtn:)]) {
+        [self.wlc_delegate wlc_tabBarDelegate:self didClickComposeNoteBtn:sender];
+    }
+//    [[NSNotificationCenter defaultCenter]postNotificationName:@"addBtnClicking" object:nil];
     
 }
 
